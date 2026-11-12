@@ -42,6 +42,7 @@ export default {
 
     // Authentication passed, return your actual webpage content
     // If you previously had HTML string here, keep it; if you need to read static files, use env.ASSETS.fetch(request)
+    console.log("Authentication passed, fetching asset for path:", new URL(request.url).pathname);
     return env.ASSETS.fetch(request);
     //return new Response("🎉 You have private access!", {
     //  headers: { "Content-Type": "text/html;charset=UTF-8", "Cache-Control": "no-store" },
