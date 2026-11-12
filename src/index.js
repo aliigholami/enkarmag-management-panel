@@ -1,5 +1,4 @@
 import { Buffer } from "node:buffer";
-
 // Secure comparison to prevent timing attacks
 const encoder = new TextEncoder();
 function timingSafeEqual(a, b) {
@@ -15,7 +14,7 @@ export default {
   async fetch(request, env) {
     const BASIC_USER = "admin"; // Username, you can change it
     const BASIC_PASS = env.PASSWORD; // This reads the Secret you added in the dashboard
-
+    console.log("Password from env:", BASIC_PASS ? "EXISTS" : "MISSING");
     const authorization = request.headers.get("Authorization");
     if (!authorization) {
       return new Response("You need to login.", {
