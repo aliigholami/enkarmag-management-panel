@@ -13,7 +13,7 @@ function timingSafeEqual(a, b) {
 export default {
   async fetch(request, env) {
     const BASIC_USER = "admin"; // Username, you can change it
-    const BASIC_PASS = env.PASSWORD; // This reads the Secret you added in the dashboard
+    const BASIC_PASS = "test"; // This reads the Secret you added in the dashboard
     console.log("The Password from env:", BASIC_PASS ? "EXISTS" : "MISSING");
     const authorization = request.headers.get("Authorization");
     if (!authorization) {
