@@ -45,6 +45,6 @@ export default {
     return env.ASSETS.fetch(request);
     //return new Response("🎉 You have private access!", {
     //  headers: { "Content-Type": "text/html;charset=UTF-8", "Cache-Control": "no-store" },
-    });
-  },
-};
+    //});
+  }
+}
