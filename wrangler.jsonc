@@ -1,7 +1,7 @@
 {
   "name": "enkarmag-mngmnt-panel",
   "main": "src/index.js",
-  "compatibility_date": "2026-11-12",
+  "compatibility_date": "2026-11-01",
   "assets": {
     "directory": "./public",
     "binding": "ASSETS",
